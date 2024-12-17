@@ -1,0 +1,1594 @@
+commit 650b653f9daa056f467683342545b964ea2263eb
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 26 12:07:07 2024 -0500
+
+    Small Last Minute Updates
+
+ auction-house/README.md                        | 2 ++
+ auction-house/src/app/Seller/UnpublishItem.tsx | 4 ++--
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 47cdfb7e10edce221f09bdf42ffc909665b55393
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Mon Nov 25 20:17:11 2024 -0500
+
+    Build Error Fixes
+
+ auction-house/src/app/Customer/page.tsx | 21 ++++++++++++++-------
+ 1 file changed, 14 insertions(+), 7 deletions(-)
+
+commit a35bf703f8a93df425f3648feb65011a5fa4f3b1
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Mon Nov 25 19:56:40 2024 -0500
+
+    SubmissionFiles
+
+ auction-house/README.md | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+commit 5355d97703de8c8880dcabec6ecb9e83eceb8254
+Merge: 70f0a7a 25ce42b
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Mon Nov 25 19:26:26 2024 -0500
+
+    Merge pull request #41 from BlakeMcl/Sonu
+    
+    Request Unfreeze, Search & Sort Done
+
+commit 25ce42b20afc5dcd59814cc8c651049b30dd003e
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Mon Nov 25 16:26:39 2024 -0500
+
+    Removed Deleted an unneeded file searchItem.tsx
+
+ LambdaFunctions/sortItemCustomer/index.mjs    | 26 ++++-----
+ auction-house/src/app/Customer/searchItem.tsx | 81 ---------------------------
+ 2 files changed, 13 insertions(+), 94 deletions(-)
+
+commit aa97923cd57ad5aaddba361e5adab71a15ddb2ff
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Mon Nov 25 16:20:15 2024 -0500
+
+    Sort Done using Lamda function
+
+ LambdaFunctions/sortItemCustomer/index.mjs         |  52 +++++++++++
+ LambdaFunctions/sortItemCustomer/package-lock.json |  98 +++++++++++++++++++++
+ LambdaFunctions/sortItemCustomer/package.json      |  13 +++
+ .../sortItemCustomer/sortItemCustomer.zip          | Bin 0 -> 322813 bytes
+ auction-house/src/app/Customer/page.tsx            |  74 ++++++----------
+ 5 files changed, 189 insertions(+), 48 deletions(-)
+
+commit 01f0879a11cbfdd87e0352ff34e485013cc603c0
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Mon Nov 25 15:18:50 2024 -0500
+
+    Search Done using Lamda function
+
+ LambdaFunctions/searchItemCustomer/index.mjs | 95 ++++++++++++----------------
+ auction-house/src/app/Customer/page.tsx      | 54 ++++++++++------
+ 2 files changed, 72 insertions(+), 77 deletions(-)
+
+commit 68b5224396a7823ab789f539d178dfcaa08d7f98
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Mon Nov 25 04:11:42 2024 -0500
+
+    Request Unfreeze and Search Done
+
+ LambdaFunctions/requestUnfreezeItems/index.mjs     |  72 +++++++++++++++
+ .../requestUnfreezeItems/package-lock.json         |  98 +++++++++++++++++++++
+ LambdaFunctions/requestUnfreezeItems/package.json  |  13 +++
+ .../requestUnfreezeItems/requestUnfreezeItems.zip  | Bin 0 -> 322734 bytes
+ LambdaFunctions/retrieveFrozenItems/index.mjs      |  50 +++++++++++
+ .../retrieveFrozenItems/package-lock.json          |  98 +++++++++++++++++++++
+ LambdaFunctions/retrieveFrozenItems/package.json   |  13 +++
+ .../retrieveFrozenItems/retrieveFrozenItems.zip    | Bin 0 -> 322876 bytes
+ LambdaFunctions/searchItemCustomer/index.mjs       |  61 +++++++++++++
+ .../searchItemCustomer/package-lock.json           |  98 +++++++++++++++++++++
+ LambdaFunctions/searchItemCustomer/package.json    |  13 +++
+ .../searchItemCustomer/searchItemCustomer.zip      | Bin 0 -> 322836 bytes
+ auction-house/src/app/Customer/page.tsx            |  37 ++++++--
+ auction-house/src/app/Customer/searchItem.tsx      |  81 +++++++++++++++++
+ auction-house/src/app/Seller/RequestUnfreeze.tsx   |  37 ++++++--
+ 15 files changed, 655 insertions(+), 16 deletions(-)
+
+commit 70f0a7a57c748c84a0ae20339eaeff19981f9c28
+Merge: 9d04bcb 4edcc23
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Sat Nov 23 20:18:35 2024 -0500
+
+    Merge pull request #40 from BlakeMcl/TimoryIteration2
+    
+    Small grammar/syntax fixes
+
+commit 4edcc2365db7afb702a10a2db48bed86bab99311
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 23 20:17:58 2024 -0500
+
+    Small grammar/syntax fixes
+
+ auction-house/src/app/Admin/page.tsx                |  6 +++---
+ auction-house/src/app/ItemBuyerPage/page.tsx        |  4 ++--
+ auction-house/src/app/Seller/ArchiveItem.tsx        |  4 ++--
+ auction-house/src/app/Seller/FulfillItem.tsx        |  4 ++--
+ auction-house/src/app/Seller/PublishItem.tsx        |  4 ++--
+ auction-house/src/app/Seller/RemoveInactiveItem.tsx |  4 ++--
+ auction-house/src/app/Seller/UnpublishItem.tsx      |  4 ++--
+ auction-house/src/app/Seller/addItem.tsx            |  4 ++--
+ auction-house/src/app/Seller/editItem.tsx           |  4 ++--
+ auction-house/src/app/page.tsx                      | 10 +++++-----
+ 10 files changed, 24 insertions(+), 24 deletions(-)
+
+commit 9d04bcb246506a5720784c59cf5bb714194d374a
+Merge: 229a693 1cedd7c
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Sat Nov 23 20:07:03 2024 -0500
+
+    Merge pull request #39 from BlakeMcl/TimoryIteration2
+    
+    Update README.md
+
+commit 1cedd7cb263203ac3182ea95db25513c669c3ab8
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 23 20:06:14 2024 -0500
+
+    Update README.md
+
+ auction-house/README.md | 37 ++++++++++++++++++-------------------
+ 1 file changed, 18 insertions(+), 19 deletions(-)
+
+commit 229a693c1895eb509fa08c1e6bb978b931932be1
+Merge: 441930e a7308a4
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 23 20:05:50 2024 -0500
+
+    Merge pull request #38 from BlakeMcl/Blake
+    
+    BlakeFinal Updates before submission
+
+commit a7308a4b22105375b223d7b035a881f46717fb36
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 23 20:04:27 2024 -0500
+
+    Update page.tsx
+
+ auction-house/src/app/Admin/page.tsx | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+commit e1976e42f923de96761f027a026577a7b837fe8e
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 23 20:01:28 2024 -0500
+
+    Some Little Updates
+
+ auction-house/src/app/Admin/page.tsx  |  8 ++++----
+ auction-house/src/app/Seller/page.tsx | 28 ++++++++++++++++------------
+ auction-house/src/app/globals.css     |  2 +-
+ 3 files changed, 21 insertions(+), 17 deletions(-)
+
+commit 441930ec679e9824cc64178b1e28c88c7f317777
+Merge: ff2f826 39b1bae
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 23 19:07:42 2024 -0500
+
+    Merge pull request #37 from BlakeMcl/Blake
+    
+    Blake’s Test and minor changes
+
+commit 39b1bae95a29490cd6137f5a8a46301ce8dcbe61
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 23 18:23:13 2024 -0500
+
+    Final Tests and Bug Fixes
+
+ auction-house/src/app/Admin/page.tsx         | 26 ++++++++++++++++++++++----
+ auction-house/src/app/Seller/ArchiveItem.tsx |  8 +++++++-
+ auction-house/src/app/Seller/FulfillItem.tsx | 16 +++++++++++++++-
+ auction-house/src/app/Seller/PublishItem.tsx |  1 -
+ auction-house/src/app/navigationBar.tsx      |  6 +++++-
+ auction-house/src/app/page.tsx               |  1 +
+ 6 files changed, 50 insertions(+), 8 deletions(-)
+
+commit 502348fc6cba9cd1f55968fd3ceff83ab00b4b43
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 23 16:33:07 2024 -0500
+
+    Testing and Refinements
+
+ auction-house/README.md                            | 57 +++++++++++++++++++++-
+ auction-house/src/app/Admin/page.tsx               |  4 ++
+ auction-house/src/app/ItemBuyerPage/page.tsx       | 26 +++++++++-
+ auction-house/src/app/Seller/FulfillItem.tsx       |  8 ++-
+ auction-house/src/app/Seller/PublishItem.tsx       |  8 ++-
+ .../src/app/Seller/RemoveInactiveItem.tsx          |  8 ++-
+ auction-house/src/app/Seller/UnpublishItem.tsx     |  8 ++-
+ auction-house/src/app/Seller/addItem.tsx           |  3 +-
+ auction-house/src/app/Seller/editItem.tsx          |  3 +-
+ auction-house/src/app/page.tsx                     | 10 ++--
+ 10 files changed, 121 insertions(+), 14 deletions(-)
+
+commit ff2f826d4af4145664d5298aee688c8770bb1984
+Merge: 1263f80 97e9578
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Fri Nov 22 13:35:48 2024 -0500
+
+    Merge pull request #36 from BlakeMcl/Julie
+    
+    Julie
+
+commit 97e957816c4c3469f9d8fdd4a58da1782cfe1fde
+Author: julievieira <javieira@wpi.edu>
+Date:   Fri Nov 22 13:34:10 2024 -0500
+
+    Update to item buyer page nav bar
+
+ auction-house/src/app/ItemBuyerPage/page.tsx |  3 ++-
+ auction-house/src/app/navigationBar.tsx      | 14 +++++++++++++-
+ 2 files changed, 15 insertions(+), 2 deletions(-)
+
+commit add2cb3a3e534dea82f5ec5079f0fbb8a379ebd9
+Merge: e5ef199 1263f80
+Author: julievieira <javieira@wpi.edu>
+Date:   Fri Nov 22 13:12:55 2024 -0500
+
+    Merge branch 'main' into Julie
+
+commit e5ef1997d51f2ee6943c4f3d2cc92c3a7d2d9850
+Author: julievieira <javieira@wpi.edu>
+Date:   Fri Nov 22 13:07:35 2024 -0500
+
+    Available funds update
+
+ auction-house/src/app/Buyer/page.tsx         |  4 ++--
+ auction-house/src/app/ItemBuyerPage/page.tsx | 19 +++++++++++++++----
+ 2 files changed, 17 insertions(+), 6 deletions(-)
+
+commit 1263f805f08f1111e9c0e6dcfc746d9999d4e832
+Merge: c416b7b ca89f77
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Fri Nov 22 12:39:55 2024 -0500
+
+    Merge pull request #35 from BlakeMcl/Blake
+    
+    Update FulfillItem.tsx
+
+commit ca89f77751d2a11a859b899599fdade02fcc3398
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Fri Nov 22 12:39:27 2024 -0500
+
+    Update FulfillItem.tsx
+
+ auction-house/src/app/Seller/FulfillItem.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c416b7b71d0feacbc93a7d7d3c3200d85d7d153c
+Merge: 3681350 72bc3b0
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Fri Nov 22 11:24:06 2024 -0500
+
+    Merge pull request #34 from BlakeMcl/Blake
+    
+    Edit Image is Fixed
+
+commit 72bc3b0005b37ad4f09cc2d361acefd96564800f
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Fri Nov 22 11:23:31 2024 -0500
+
+    Edit Image is Fixed
+
+ auction-house/src/app/Seller/addItem.tsx  | 14 ++--------
+ auction-house/src/app/Seller/editItem.tsx | 45 ++++++++++++++++---------------
+ auction-house/src/app/globals.css         |  5 ++--
+ 3 files changed, 28 insertions(+), 36 deletions(-)
+
+commit 36813508ab578f0daf16bddfbbaf851a5b24106d
+Merge: ec7561e 44c2c98
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 21 18:15:50 2024 -0500
+
+    Merge pull request #33 from BlakeMcl/Blake
+    
+    Blake Frozen Stuff
+
+commit 44c2c9860ec5c65ec4cb0c512e6a5586d43543ee
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 21 18:15:05 2024 -0500
+
+    FreezeUpdates
+
+ auction-house/src/app/Admin/page.tsx    | 153 +++++++++++++++++++++++++-------
+ auction-house/src/app/globals.css       |  41 +++++----
+ auction-house/src/app/navigationBar.tsx |   6 +-
+ auction-house/src/app/page.tsx          |   4 +-
+ 4 files changed, 156 insertions(+), 48 deletions(-)
+
+commit 645a1f2c19dd0f83512e6ec62b470d3cd14bb2a5
+Author: julievieira <javieira@wpi.edu>
+Date:   Thu Nov 21 12:32:34 2024 -0500
+
+    Retrieve available funds after bid -- still need to do buy now
+
+ LambdaFunctions/retrieveAvailableFunds/index.mjs   |  50 +++++++++++
+ .../retrieveAvailableFunds/package-lock.json       |  98 +++++++++++++++++++++
+ .../retrieveAvailableFunds/package.json            |  13 +++
+ .../retrieveAvailableFunds.zip                     | Bin 0 -> 335942 bytes
+ auction-house/src/app/Buyer/page.tsx               |   4 +-
+ auction-house/src/app/ItemBuyerPage/page.tsx       |  13 ++-
+ 6 files changed, 173 insertions(+), 5 deletions(-)
+
+commit ec7561e037ca6fd01427f7ce9cc945e1d643c57f
+Merge: 89ca261 174f59f
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Wed Nov 20 10:12:50 2024 -0500
+
+    Merge pull request #32 from BlakeMcl/Sonu
+    
+    Sonu
+
+commit 89ca261fc676b08e8e8b0a4f6d70bc6346555ceb
+Merge: b662595 3cbd973
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Tue Nov 19 11:01:01 2024 -0500
+
+    Merge pull request #31 from BlakeMcl/TimoryIteration2
+    
+    Remove Inactive Eligible
+
+commit 3cbd97395ea38549214b99f89ea6dafb4a68a1c9
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Tue Nov 19 11:00:18 2024 -0500
+
+    Remove Inactive Eligible
+
+ .../getArchiveEligibleItemIds/index.mjs            |   2 +-
+ LambdaFunctions/getRemoveEligibleItemIds/index.mjs |  48 ++++++++++
+ .../getRemoveEligibleItemIds/package-lock.json     |  98 +++++++++++++++++++++
+ .../getRemoveEligibleItemIds/package-lock.zip      | Bin 0 -> 335956 bytes
+ .../getRemoveEligibleItemIds/package.json          |  13 +++
+ .../src/app/Seller/RemoveInactiveItem.tsx          |   2 +-
+ 6 files changed, 161 insertions(+), 2 deletions(-)
+
+commit 174f59f524637b4fe556fda8e7700169b23a4d74
+Merge: f708189 b662595
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Tue Nov 19 10:25:54 2024 -0500
+
+    Sort Items Done
+
+commit f70818930cf93085f79c2f77803a535e2b644857
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Tue Nov 19 09:59:54 2024 -0500
+
+    Sort Items Done
+
+ auction-house/src/app/Customer/page.tsx | 217 +++++++++++++++++++-------------
+ 1 file changed, 131 insertions(+), 86 deletions(-)
+
+commit b6625959561d495928dc1905c672a735decb18e1
+Merge: d263d07 303e7c9
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Sun Nov 17 16:02:11 2024 -0500
+
+    Merge pull request #30 from BlakeMcl/TimoryIteration2
+
+commit 303e7c9999aabac6bcb614f1ec2de36e2c888adc
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sun Nov 17 15:59:15 2024 -0500
+
+    Archive, remove inactive, and unpublish work
+
+ LambdaFunctions/archiveItem/index.mjs              | 41 +++++++++++-----------
+ .../getArchiveEligibleItemIds/index.mjs            | 29 +++++++++------
+ .../getUnpublishEligibleItemIds/index.mjs          | 28 +++++++++------
+ LambdaFunctions/removeInactiveItem/index.mjs       | 39 ++++++++++----------
+ LambdaFunctions/unpublishItem/index.mjs            | 38 ++++++++++----------
+ auction-house/src/app/Seller/ArchiveItem.tsx       |  4 +--
+ .../src/app/Seller/RemoveInactiveItem.tsx          |  4 +--
+ auction-house/src/app/Seller/UnpublishItem.tsx     |  4 +--
+ 8 files changed, 98 insertions(+), 89 deletions(-)
+
+commit ed129d57fac008b16c02b13f5b0bee12110e6fbd
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sun Nov 17 11:50:48 2024 -0500
+
+    someMoreEdits
+
+ .DS_Store                                      | Bin 6148 -> 8196 bytes
+ LambdaFunctions/.DS_Store                      | Bin 6148 -> 8196 bytes
+ LambdaFunctions/sampleLambdaUpload/.DS_Store   | Bin 6148 -> 6148 bytes
+ LambdaFunctions/sampleLambdaUpload/Archive.zip | Bin 0 -> 337734 bytes
+ auction-house/src/app/Admin/page.tsx           | 115 +++++++++++++++++++++++++
+ auction-house/src/app/ItemBuyerPage/page.tsx   |  22 ++++-
+ auction-house/src/app/globals.css              |  22 +++++
+ auction-house/src/app/navigationBar.tsx        |   2 +-
+ 8 files changed, 159 insertions(+), 2 deletions(-)
+
+commit d263d07580b3461982930535611c5853503a5a45
+Merge: e21652a 74d32f2
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Fri Nov 15 12:59:59 2024 -0500
+
+    Merge pull request #29 from BlakeMcl/TimoryIteration2
+
+commit 74d32f22a786897c8e1804ea25b4f84ce01c0817
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Fri Nov 15 12:59:07 2024 -0500
+
+    Lamda functions for unpublish item, archive item, and remove item
+
+ LambdaFunctions/archiveItem/index.mjs              |  52 +++++++++++
+ LambdaFunctions/archiveItem/index.zip              | Bin 0 -> 336042 bytes
+ LambdaFunctions/archiveItem/package-lock.json      |  98 +++++++++++++++++++++
+ LambdaFunctions/archiveItem/package.json           |  13 +++
+ .../getArchiveEligibleItemIds/index.mjs            |  42 +++++++++
+ .../getArchiveEligibleItemIds/package-lock.json    |  98 +++++++++++++++++++++
+ .../getArchiveEligibleItemIds/package-lock.zip     | Bin 0 -> 335956 bytes
+ .../getArchiveEligibleItemIds/package.json         |  13 +++
+ .../getUnpublishEligibleItemIds/index.mjs          |  42 +++++++++
+ .../getUnpublishEligibleItemIds/package-lock.json  |  98 +++++++++++++++++++++
+ .../getUnpublishEligibleItemIds/package-lock.zip   | Bin 0 -> 335958 bytes
+ .../getUnpublishEligibleItemIds/package.json       |  13 +++
+ LambdaFunctions/removeInactiveItem/index.mjs       |  52 +++++++++++
+ .../removeInactiveItem/package-lock.json           |  98 +++++++++++++++++++++
+ LambdaFunctions/removeInactiveItem/package.json    |  13 +++
+ LambdaFunctions/removeInactiveItem/package.zip     | Bin 0 -> 336056 bytes
+ LambdaFunctions/unpublishItem/index.mjs            |  52 +++++++++++
+ LambdaFunctions/unpublishItem/node_modules.zip     | Bin 0 -> 336058 bytes
+ LambdaFunctions/unpublishItem/package-lock.json    |  98 +++++++++++++++++++++
+ LambdaFunctions/unpublishItem/package.json         |  13 +++
+ .../src/app/Seller/RemoveInactiveItem.tsx          |   2 +-
+ 21 files changed, 796 insertions(+), 1 deletion(-)
+
+commit e21652a916d053bba45eb284d3d9c0df2dafc3bf
+Merge: 831ff35 31f9e36
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Fri Nov 15 07:12:52 2024 -0500
+
+    Merge pull request #28 from BlakeMcl/Julie
+
+commit 31f9e3673886e733088970fd838b27fea4677fb2
+Author: julievieira <javieira@wpi.edu>
+Date:   Fri Nov 15 05:04:57 2024 -0500
+
+    Fulfill Item
+
+ LambdaFunctions/fulfillItem/fulfillItem.zip        | Bin 0 -> 336262 bytes
+ LambdaFunctions/fulfillItem/index.mjs              |  91 +++++++++++++++++++
+ LambdaFunctions/fulfillItem/package-lock.json      |  98 +++++++++++++++++++++
+ LambdaFunctions/fulfillItem/package.json           |  13 +++
+ .../getFulfillEligibleItemIds.zip                  | Bin 0 -> 335999 bytes
+ .../getFulfillEligibleItemIds/index.mjs            |  50 +++++++++++
+ .../getFulfillEligibleItemIds/package-lock.json    |  98 +++++++++++++++++++++
+ .../getFulfillEligibleItemIds/package.json         |  13 +++
+ auction-house/src/app/Seller/ArchiveItem.tsx       |   2 +-
+ auction-house/src/app/Seller/FulfillItem.tsx       |  79 +++++++++++++++++
+ auction-house/src/app/Seller/PublishItem.tsx       |   2 +-
+ .../src/app/Seller/RemoveInactiveItem.tsx          |   2 +-
+ auction-house/src/app/Seller/RequestUnfreeze.tsx   |   2 +-
+ auction-house/src/app/Seller/UnpublishItem.tsx     |   2 +-
+ auction-house/src/app/Seller/editItem.tsx          |   2 +-
+ auction-house/src/app/Seller/page.tsx              |   2 +
+ 16 files changed, 450 insertions(+), 6 deletions(-)
+
+commit 4da2f161c87ccc85b9607491f6dd40b5aee102aa
+Author: julievieira <javieira@wpi.edu>
+Date:   Fri Nov 15 02:58:32 2024 -0500
+
+    Review active bids
+
+ LambdaFunctions/retrieveActiveBids/index.mjs       |  50 +++++++++++
+ .../retrieveActiveBids/package-lock.json           |  98 +++++++++++++++++++++
+ LambdaFunctions/retrieveActiveBids/package.json    |  13 +++
+ .../retrieveActiveBids/retrieveActiveBids.zip      | Bin 0 -> 336043 bytes
+ auction-house/src/app/Buyer/page.tsx               |  38 ++++++++
+ 5 files changed, 199 insertions(+)
+
+commit 0dd4299203537ec7541c5f00525960e431c020ae
+Author: julievieira <javieira@wpi.edu>
+Date:   Fri Nov 15 01:37:54 2024 -0500
+
+    Place bid
+
+ LambdaFunctions/placeBid/index.mjs           |  86 +++++++++++++++++++++++
+ LambdaFunctions/placeBid/package-lock.json   |  98 +++++++++++++++++++++++++++
+ LambdaFunctions/placeBid/package.json        |  13 ++++
+ LambdaFunctions/placeBid/placeBid.zip        | Bin 0 -> 336146 bytes
+ auction-house/src/app/ItemBuyerPage/page.tsx |  35 +++++++++-
+ 5 files changed, 230 insertions(+), 2 deletions(-)
+
+commit 831ff35e8dc81bb3f0aec7b270c912aaf065579c
+Merge: b47f514 6120c12
+Author: julievieira <127808182+julievieira@users.noreply.github.com>
+Date:   Thu Nov 14 19:11:58 2024 -0500
+
+    Merge pull request #27 from BlakeMcl/Blake
+    
+    Place Bids
+
+commit 6120c129f93970b0c85616ac69690dc7a7a832e6
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 14 19:11:25 2024 -0500
+
+    Place Bids
+
+ auction-house/src/app/Customer/page.tsx      | 2 +-
+ auction-house/src/app/ItemBuyerPage/page.tsx | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit b47f514c68d40ff6bbb19c1fee9c6d4469e07d31
+Merge: 1a49a5d b8cb666
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 14 17:55:07 2024 -0500
+
+    Merge pull request #26 from BlakeMcl/Blake
+    
+    Blake iteration one Corrections
+
+commit b8cb6662da4d9dc7556e534204baff542c739701
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 14 14:12:22 2024 -0500
+
+    storageClear
+
+ auction-house/src/app/page.tsx | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 444ee3b4f5359fc08619ea68bcd20a629ac2664e
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 14 14:05:29 2024 -0500
+
+    Fixing some Interation one errors
+
+ auction-house/src/app/Buyer/page.tsx    | 26 +++++++---------------
+ auction-house/src/app/Customer/page.tsx | 34 ++++++++++++++++++----------
+ auction-house/src/app/globals.css       | 38 +++++++++++++++++++++++++++++++-
+ auction-house/src/app/navigationBar.tsx | 39 +++++++++++++++++++++++++++------
+ 4 files changed, 100 insertions(+), 37 deletions(-)
+
+commit 36ea4de2fdcdda73f820a10fddfb4d4a189288e5
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 14 12:00:29 2024 -0500
+
+    Some More Updates
+
+ auction-house/src/app/Buyer/page.tsx         | 54 +++++++++-------------------
+ auction-house/src/app/ItemBuyerPage/page.tsx |  1 +
+ auction-house/src/app/globals.css            |  5 +++
+ auction-house/src/app/navigationBar.tsx      | 23 ++++++++++--
+ 4 files changed, 43 insertions(+), 40 deletions(-)
+
+commit 1a49a5d4b19d4ec79f18aabde9d95d864eae6662
+Merge: 476ba10 9bf7c33
+Author: julievieira <127808182+julievieira@users.noreply.github.com>
+Date:   Tue Nov 12 14:02:58 2024 -0500
+
+    Merge pull request #25 from BlakeMcl/Blake
+    
+    Working Though InstaBuy teams
+
+commit 9bf7c3320abcfa73cf1b4e26a9659b59831eaa81
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 12 14:01:23 2024 -0500
+
+    SetUp Item Pages Working on Buyer
+
+ auction-house/src/app/Buyer/page.tsx  | 159 +++++++++++++++++++++++++++++++---
+ auction-house/src/app/Seller/page.tsx |   6 +-
+ auction-house/src/app/globals.css     |   7 ++
+ 3 files changed, 157 insertions(+), 15 deletions(-)
+
+commit 22ec3dbcc7e243fa3daae2e740d03659f5c5f610
+Merge: 9105716 476ba10
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 12 13:41:21 2024 -0500
+
+    Merge branch 'main' into Blake
+
+commit 476ba10842c29cdf2ea4c9234717784474faf20b
+Merge: 0fd685c 943a14d
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Tue Nov 12 13:40:45 2024 -0500
+
+    Merge pull request #24 from BlakeMcl/TimoryIteration2
+
+commit 943a14d1bab71bff1a7db3c9e2787d77c6d69de3
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Tue Nov 12 13:39:40 2024 -0500
+
+    Frontend development and lambda syncing
+
+ auction-house/src/app/Seller/ArchiveItem.tsx       |  4 +-
+ auction-house/src/app/Seller/PublishItem.tsx       | 77 ++++++++++++++++++++++
+ .../src/app/Seller/RemoveInactiveItem.tsx          |  4 +-
+ auction-house/src/app/Seller/RequestUnfreeze.tsx   | 77 ++++++++++++++++++++++
+ auction-house/src/app/Seller/UnpublishItem.tsx     |  4 +-
+ auction-house/src/app/Seller/page.tsx              | 60 ++---------------
+ 6 files changed, 165 insertions(+), 61 deletions(-)
+
+commit 9105716539b9fe725e9d84b464da44cfd5307a5a
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 12 13:39:39 2024 -0500
+
+    Working on ItemPageNavigation and Data Passing
+
+ auction-house/src/app/Item/page.tsx             | 10 +++----
+ auction-house/src/app/ItemBuyerPage/layout.tsx  | 35 +++++++++++++++++++++++++
+ auction-house/src/app/ItemBuyerPage/page.tsx    | 23 ++++++++++++++++
+ auction-house/src/app/ItemSellerPage/layout.tsx | 35 +++++++++++++++++++++++++
+ auction-house/src/app/ItemSellerPage/page.tsx   | 23 ++++++++++++++++
+ auction-house/src/app/Seller/editItem.tsx       | 16 +++++++----
+ auction-house/src/app/Seller/page.tsx           |  4 ++-
+ 7 files changed, 135 insertions(+), 11 deletions(-)
+
+commit be2732a2ab12c80afde052b8e624e9fee37d401a
+Merge: e832e35 0fd685c
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 12 10:49:42 2024 -0500
+
+    Merge branch 'main' into Blake
+
+commit e832e3593178225e6320bb03db51027adf0fc110
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 12 10:49:29 2024 -0500
+
+    Working AddItem for BuyNow
+
+ auction-house/src/app/Seller/Archive.tsx  | 527 ------------------------------
+ auction-house/src/app/Seller/addItem.tsx  |  18 +-
+ auction-house/src/app/Seller/editItem.tsx |  17 +-
+ 3 files changed, 32 insertions(+), 530 deletions(-)
+
+commit 0fd685c6c75339f272ec9281059127ab794f9c37
+Merge: 9b9e816 9a93fd5
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Tue Nov 12 10:48:42 2024 -0500
+
+    Merge pull request #23 from BlakeMcl/TimoryIteration2
+
+commit 9a93fd5a454952dfe8fc6a419bb11c08911b7908
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Tue Nov 12 10:46:51 2024 -0500
+
+    Frontend for unpublish, archive, and remove inactive
+
+ auction-house/src/app/Seller/ArchiveItem.tsx       | 77 ++++++++++++++++++++++
+ .../src/app/Seller/RemoveInactiveItem.tsx          | 77 ++++++++++++++++++++++
+ auction-house/src/app/Seller/UnpublishItem.tsx     | 77 ++++++++++++++++++++++
+ auction-house/src/app/Seller/page.tsx              |  7 ++
+ auction-house/src/app/globals.css                  |  8 +++
+ 5 files changed, 246 insertions(+)
+
+commit 7474f4bf0266503e897b97b1eb5092a4c1977eb5
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Mon Nov 11 22:45:06 2024 -0500
+
+    Some GUI
+
+ auction-house/src/app/Seller/addItem.tsx | 20 ++++++++++++++++++--
+ auction-house/src/app/globals.css        |  5 ++++-
+ 2 files changed, 22 insertions(+), 3 deletions(-)
+
+commit 9b9e816b2d1a29557c84eb1c9a9721e38d2fa21f
+Merge: 5673b7e be0a53b
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Mon Nov 11 21:05:27 2024 -0500
+
+    Merge pull request #22 from BlakeMcl/Blake
+    
+    Updated and Refined Gui to Add in Buy Now Functionality
+
+commit be0a53b17fb66c072cff80674ef803d8480afa56
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Mon Nov 11 21:04:31 2024 -0500
+
+    Updated and Refined Gui to Add in Buy Now Functionality
+
+ auction-house/src 2.zip                        | Bin 170168 -> 0 bytes
+ auction-house/src.zip                          | Bin 169705 -> 0 bytes
+ auction-house/src/app/Seller/Archive.tsx       | 527 +++++++++++++++++++++++++
+ auction-house/src/app/Seller/addItem.tsx       | 162 ++++++++
+ auction-house/src/app/Seller/editItem.tsx      | 231 +++++++++++
+ auction-house/src/app/Seller/page.tsx          | 373 ++---------------
+ auction-house/src/app/globals.css              |  32 +-
+ auction-house/src/app/loginPageControllers.tsx |   0
+ auction-house/src/app/navigationBar.tsx        |  21 +
+ auction-house/src/app/page.tsx                 |   4 +-
+ 10 files changed, 1016 insertions(+), 334 deletions(-)
+
+commit 5673b7e432f2cab8de119825142e5493575e3054
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Mon Nov 11 17:57:25 2024 -0500
+
+    SubmissionBuild
+
+ .DS_Store                    | Bin 6148 -> 6148 bytes
+ auction-house/git.report.txt |  26 ++++++++++++++++++++++++++
+ auction-house/src 2.zip      | Bin 0 -> 170168 bytes
+ 3 files changed, 26 insertions(+)
+
+commit a5a643ca5f328abbed63e9f1a9bd50d70ed07721
+Merge: af97476 b86c08c
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 20:16:19 2024 -0500
+
+    Merge branch 'main' of https://github.com/BlakeMcl/AuctionHouseCLIPS
+
+commit af97476af377182e4abca0d0dcedccebe6d6216d
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 20:16:11 2024 -0500
+
+    FInal Fixes
+
+ auction-house/git.report.txt          | 136 ++++++++++++++++++++++++++++++++++
+ auction-house/src/app/Seller/page.tsx |   1 -
+ 2 files changed, 136 insertions(+), 1 deletion(-)
+
+commit b86c08c1c4bd8414a0d228eef14a4ec8826b216b
+Author: julievieira <javieira@wpi.edu>
+Date:   Sat Nov 9 20:15:37 2024 -0500
+
+    read me updates
+
+ auction-house/README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 7412089e2e7070d496da544665d2eae10f32461e
+Merge: 1c6877b ac9a4b7
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 9 19:54:57 2024 -0500
+
+    Merge pull request #21 from BlakeMcl/Blake
+    
+    Blake
+
+commit ac9a4b796d0bc0714d91f31d5f2af6e036105d24
+Merge: 25a3379 7b436ea
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 19:50:58 2024 -0500
+
+    Merge branch 'Blake' of https://github.com/BlakeMcl/AuctionHouseCLIPS into Blake
+
+commit 25a3379036c7f5065f379ea52894cb2c5500f33d
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 19:50:53 2024 -0500
+
+    Update README.md
+
+ auction-house/README.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 7b436eab5ad22e9d90f77075cf3938a8e93100b9
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 9 19:49:11 2024 -0500
+
+    Fixing small bugs
+
+ auction-house/src/app/Item/page.tsx   |  3 +++
+ auction-house/src/app/Seller/page.tsx | 14 +++++++-------
+ 2 files changed, 10 insertions(+), 7 deletions(-)
+
+commit 3b26b6d815c894f0832328a67bef14cba1139dbf
+Merge: aec5f82 c7d9776
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 19:01:15 2024 -0500
+
+    Merge branch 'Blake' of https://github.com/BlakeMcl/AuctionHouseCLIPS into Blake
+
+commit aec5f82ea4db60a8696383211cb8772b178db898
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 19:01:11 2024 -0500
+
+    EditItem
+
+ auction-house/src/app/Seller/page.tsx | 168 +++++++++++++++++-----------------
+ auction-house/src/app/globals.css     |   5 +
+ 2 files changed, 91 insertions(+), 82 deletions(-)
+
+commit c7d97766120d7604a2621e968549e71909d83d0d
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 9 18:54:33 2024 -0500
+
+    Updated readme
+
+ auction-house/README.md | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+commit 4c9ff065c5a271006dda3ec48c907f9292121a54
+Merge: 418e467 8d32ed3
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 9 18:37:31 2024 -0500
+
+    Merge branch 'Blake' of https://github.com/BlakeMcl/AuctionHouseCLIPS into Blake
+
+commit 418e4678f84098cc24ff84d3eeca722e782133ee
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 9 18:37:27 2024 -0500
+
+    Fix close account
+
+ LambdaFunctions/closeAccountSeller/index.mjs | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+commit 8d32ed3821661baf6ba525943476ca2099853e12
+Author: julievieira <javieira@wpi.edu>
+Date:   Sat Nov 9 18:27:06 2024 -0500
+
+    Added Buttons
+
+ auction-house/src/app/Seller/page.tsx | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+
+commit f9718cc12235728dc7dd8b902e6ecca6b9375942
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 17:48:02 2024 -0500
+
+    Update page.tsx
+
+ auction-house/src/app/Seller/page.tsx | 38 ++++++++++++++++++++---------------
+ 1 file changed, 22 insertions(+), 16 deletions(-)
+
+commit e548562649ef4ca1c41a0d385a4e1453ad3bf161
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 17:08:08 2024 -0500
+
+    Update page.tsx
+
+ auction-house/src/app/Seller/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2d723aa68b7300690d5ad80387f030c7e6b3e864
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sat Nov 9 14:45:04 2024 -0500
+
+    Update page.tsx
+
+ auction-house/src/app/Seller/page.tsx | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+commit 1c6877ba432c31f0d855fb305ee2e4912d5c8b9d
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 18:44:37 2024 -0500
+
+    Submission
+
+ .DS_Store             | Bin 6148 -> 6148 bytes
+ auction-house/src.zip | Bin 0 -> 169705 bytes
+ s3BucketLink.txt      |   1 +
+ 3 files changed, 1 insertion(+)
+
+commit 53b06b0a52b174efe783862687800433638170cd
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 11:40:54 2024 -0500
+
+    Iteration One Comit
+
+ auction-house/README.md         |  13 +-
+ auction-house/git.report.txt    | 725 ++++++++++++++++++++++++++++++++++++++++
+ auction-house/package-lock.json | 349 ++++++++++++++++++-
+ auction-house/package.json      |   3 +-
+ 4 files changed, 1072 insertions(+), 18 deletions(-)
+
+commit 2773088e8e07e8c48607794be230949e185f4bed
+Merge: 7d2f875 adb03ba
+Author: julievieira <127808182+julievieira@users.noreply.github.com>
+Date:   Thu Nov 7 11:07:57 2024 -0500
+
+    Merge pull request #20 from BlakeMcl/s3BuildingBranch
+    
+    S3 building branch
+
+commit adb03ba05da67be1a5058229f0c0f1c421e11f95
+Merge: 0b88367 7d2f875
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 11:06:45 2024 -0500
+
+    Merge branch 'main' into s3BuildingBranch
+
+commit 7d2f87521ce66614c64b83479acfa6f8fea5a6c8
+Merge: e04675d 4c0553a
+Author: julievieira <127808182+julievieira@users.noreply.github.com>
+Date:   Thu Nov 7 11:05:41 2024 -0500
+
+    Merge pull request #19 from BlakeMcl/logoutAndHeader
+    
+    LogoutButtons Implemented
+
+commit 4c0553ad98b2e71b042f2496198b0b0ef5ae8bbc
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 11:04:55 2024 -0500
+
+    LogoutButtons Implemented
+    
+    Setup the Logout Button
+
+ LambdaFunctions/.DS_Store               | Bin 6148 -> 6148 bytes
+ auction-house/src/app/Admin/page.tsx    |   4 +++-
+ auction-house/src/app/Buyer/page.tsx    |   1 +
+ auction-house/src/app/Customer/page.tsx |   1 +
+ auction-house/src/app/Seller/page.tsx   |   2 ++
+ 5 files changed, 7 insertions(+), 1 deletion(-)
+
+commit e04675d68884ead438fa70082059a417a33cc8b1
+Merge: 57e2b3b b3e73b8
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 7 10:37:41 2024 -0500
+
+    Merge pull request #18 from BlakeMcl/Blake
+    
+    Publish Item Bug Fixes
+
+commit b3e73b8944031c4cc9de0bc4d6f3fc5be5583197
+Merge: 62fb75c 57e2b3b
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 10:36:21 2024 -0500
+
+    Merge branch 'main' into Blake
+
+commit 62fb75c64532e38602d88bdde80bf3bececd9393
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 7 10:32:46 2024 -0500
+
+    Publish Item Working
+
+ auction-house/src/app/Seller/page.tsx | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 9e18c75a6b451f07798b21b37be1650991009c89
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 7 10:18:30 2024 -0500
+
+    Adjust Publish drop down
+
+ auction-house/README.md               |  9 +++------
+ auction-house/src/app/Seller/page.tsx | 18 ++++++++++++++++--
+ 2 files changed, 19 insertions(+), 8 deletions(-)
+
+commit 375104ac198141c0ebb2f0d7f6131c4fc033a6e3
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 7 09:03:34 2024 -0500
+
+    Update page.tsx
+
+ auction-house/src/app/Seller/page.tsx | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit f883fbf2250558a7fb1d8de5a9ca8e4739d99bb2
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 08:58:15 2024 -0500
+
+    ID is now displaying
+
+ auction-house/src/app/Seller/page.tsx | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 0f0e003e11a403760ee10b88a9f20daee60feb2a
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 7 08:54:09 2024 -0500
+
+    Update page.tsx
+
+ auction-house/src/app/Seller/page.tsx | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+commit 5edc8795a480a1cd71b3862551729a0ac3d060c8
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Nov 7 08:21:01 2024 -0500
+
+    fixed doc error
+
+ auction-house/src/app/Seller/page.tsx | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+commit 57e2b3bdf9b94d87ce1fba29f24a207d06766593
+Merge: 23af55f b9d0882
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Thu Nov 7 07:58:59 2024 -0500
+
+    Merge pull request #16 from BlakeMcl/Julie
+    
+    Seller page update
+
+commit b9d0882e57b25a3bddc22160194ac72276fb8c4b
+Author: julievieira <javieira@wpi.edu>
+Date:   Thu Nov 7 00:39:26 2024 -0500
+
+    AddItem should work, EditItem does not
+
+ auction-house/src/app/Seller/page.tsx | 40 +++++++++++++++++++++++++----------
+ 1 file changed, 29 insertions(+), 11 deletions(-)
+
+commit c7c62729a2dde5133b971e9550a379ada36cf33c
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Nov 7 00:29:16 2024 -0500
+
+    Seller item display
+    
+    not fully working....
+
+ LambdaFunctions/getSellersItems/index.mjs         |  42 ++++++
+ LambdaFunctions/getSellersItems/package-lock.json | 173 ++++++++++++++++++++++
+ LambdaFunctions/getSellersItems/package-lock.zip  | Bin 0 -> 336006 bytes
+ LambdaFunctions/getSellersItems/package.json      |  13 ++
+ LambdaFunctions/package-lock.json                 |   6 +
+ auction-house/README.md                           |  50 ++++---
+ auction-house/src/app/Seller/page.tsx             | 129 ++++++++++++++++
+ 7 files changed, 390 insertions(+), 23 deletions(-)
+
+commit 43663029b270f69a9d33ba2938ccccf51efafd88
+Author: julievieira <javieira@wpi.edu>
+Date:   Wed Nov 6 23:50:38 2024 -0500
+
+    Minor updates to addItem/publishItem
+
+ LambdaFunctions/addItem/index.mjs     | 21 +++++++++++++--------
+ LambdaFunctions/publishItem/index.mjs |  9 ++++++---
+ auction-house/src/app/Seller/page.tsx | 15 +++++++++++----
+ 3 files changed, 30 insertions(+), 15 deletions(-)
+
+commit fa7714ac6c01839c3b1204d05f15b3663cb25657
+Author: julievieira <javieira@wpi.edu>
+Date:   Wed Nov 6 22:54:36 2024 -0500
+
+    Seller page update
+
+ auction-house/src/app/Seller/page.tsx | 41 +++++++++++++++++++++++++++--------
+ 1 file changed, 32 insertions(+), 9 deletions(-)
+
+commit 0b88367c742b7fab9ffc8c83617bd071c916cddf
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Wed Nov 6 22:50:37 2024 -0500
+
+    Upload to S3 Bucket
+
+ auction-house/.eslintrc.json                |  7 ++++++-
+ auction-house/next.config.ts                |  2 ++
+ auction-house/src/app/Buyer/buyerLamdas.tsx | 19 -------------------
+ 3 files changed, 8 insertions(+), 20 deletions(-)
+
+commit 23af55fe2d85984a728303d850ac741ab18d6576
+Merge: 241565e e4acdfa
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Wed Nov 6 20:10:56 2024 -0500
+
+    Merge pull request #15 from BlakeMcl/Julie
+    
+    Publish Item complete, Edit and Add item need images still
+
+commit e4acdfa3ecb2ec7ea089bcc5122c26ca3a51d62a
+Author: julievieira <javieira@wpi.edu>
+Date:   Wed Nov 6 18:32:26 2024 -0500
+
+    Edit item updates
+
+ LambdaFunctions/addItem/index.mjs           |   2 +-
+ LambdaFunctions/editItem/editItem.zip       | Bin 0 -> 336073 bytes
+ LambdaFunctions/editItem/index.mjs          |  10 +-
+ LambdaFunctions/editItem/package-lock.json  |  98 +++++++++++++++++
+ auction-house/src/app/Seller/addItemDiv.tsx |  12 +--
+ auction-house/src/app/Seller/page.tsx       | 156 +++++++++++++++++++---------
+ auction-house/src/app/globals.css           |  11 +-
+ 7 files changed, 227 insertions(+), 62 deletions(-)
+
+commit 241565ed83e4cde02278771ea8f7966e2113dfaa
+Merge: 41798d0 7184f95
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Wed Nov 6 14:53:23 2024 -0500
+
+    Merge pull request #14 from BlakeMcl/Blake
+    
+    Blake Login Bug
+
+commit 693eb855ae1f0578ba2290e91f2910f132bae34b
+Author: julievieira <javieira@wpi.edu>
+Date:   Wed Nov 6 12:35:24 2024 -0500
+
+    getSellerItemIds complete
+
+ .../getSellerItemIds/getSellerItemIds.zip          | Bin 0 -> 335938 bytes
+ LambdaFunctions/getSellerItemIds/index.mjs         |  42 +++++++++
+ LambdaFunctions/getSellerItemIds/package-lock.json |  98 +++++++++++++++++++++
+ LambdaFunctions/getSellerItemIds/package.json      |  13 +++
+ LambdaFunctions/publishItem/index.mjs              |   2 +-
+ auction-house/src/app/Seller/page.tsx              |  28 +++++-
+ 6 files changed, 178 insertions(+), 5 deletions(-)
+
+commit 03816c63b696c6d3704344dd1057376093f7c160
+Author: julievieira <javieira@wpi.edu>
+Date:   Wed Nov 6 11:23:24 2024 -0500
+
+    PublishItem complete
+
+ LambdaFunctions/publishItem/index.mjs         |  66 +++++++++--------
+ LambdaFunctions/publishItem/package-lock.json |  98 ++++++++++++++++++++++++++
+ LambdaFunctions/publishItem/publishItem.zip   | Bin 0 -> 335965 bytes
+ auction-house/src/app/Seller/page.tsx         |  37 ++++++++--
+ 4 files changed, 167 insertions(+), 34 deletions(-)
+
+commit 7184f959e4c7e1bfdc6b2fcd55cdd6ccb2e1383d
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Wed Nov 6 08:10:19 2024 -0500
+
+    Some Bug Fixes
+    
+    Fixed a StorageRouting Issue/ and A TypeScript Bug and User Noftification of a failed login
+
+ auction-house/src/app/Buyer/page.tsx |  4 ++--
+ auction-house/src/app/page.tsx       | 19 +++++++++++++++----
+ 2 files changed, 17 insertions(+), 6 deletions(-)
+
+commit acf0e474b0f390529cc88d50b7903e8874dc0373
+Merge: 5cc27ef 41798d0
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Wed Nov 6 07:53:23 2024 -0500
+
+    Merge branch 'main' into Blake
+
+commit 41798d00545e146994f1355ff2ec7bceccacc730
+Merge: da80dfc fc8f061
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Wed Nov 6 07:52:14 2024 -0500
+
+    Merge pull request #13 from BlakeMcl/Sonu
+    
+    Sonu
+
+commit fc8f061f344a27f98206fec3a74ea36dd4e0286d
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Wed Nov 6 06:15:55 2024 -0500
+
+    Changes in add funds implementation to include updated funds for dashboard
+
+ LambdaFunctions/addFunds/index.mjs          | 66 ++++++++++++------------
+ auction-house/src/app/Buyer/buyerLamdas.tsx |  3 +-
+ auction-house/src/app/Buyer/page.tsx        | 79 ++++++++++++++++++++++-------
+ 3 files changed, 97 insertions(+), 51 deletions(-)
+
+commit 54dc66181ca5f93e423cf0aae50a59974c468677
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Wed Nov 6 04:08:20 2024 -0500
+
+    Create Account implemented Frontend and Create Account Seller Lamda Function
+
+ .../createAccountSeller/createAccountSeller.zip    | Bin 0 -> 323218 bytes
+ LambdaFunctions/createAccountSeller/index.mjs      |  92 ++++++++++++++++
+ .../createAccountSeller/package-lock.json          | 109 +++++++++++++++++++
+ LambdaFunctions/createAccountSeller/package.json   |  13 +++
+ auction-house/src/app/Buyer/buyerLamdas.tsx        |   4 +-
+ auction-house/src/app/page.tsx                     | 120 +++++++++++++--------
+ 6 files changed, 295 insertions(+), 43 deletions(-)
+
+commit 53690cb87eafcc33ccf99160ef9fd33f4da36219
+Author: Sonu Tejwani <sonutejwani13@gmail.com>
+Date:   Wed Nov 6 00:47:30 2024 -0500
+
+    createAccountBuyer & addFunds Lamda Functions
+
+ LambdaFunctions/addFunds/addFunds.zip              | Bin 0 -> 322933 bytes
+ LambdaFunctions/addFunds/index.mjs                 |  64 ++++++++++++
+ LambdaFunctions/addFunds/package-lock.json         | 109 +++++++++++++++++++++
+ LambdaFunctions/addFunds/package.json              |  13 +++
+ .../createAccountBuyer/createAccountBuyer.zip      | Bin 0 -> 323196 bytes
+ LambdaFunctions/createAccountBuyer/index.mjs       |  92 +++++++++++++++++
+ .../createAccountBuyer/package-lock.json           | 109 +++++++++++++++++++++
+ LambdaFunctions/createAccountBuyer/package.json    |  13 +++
+ 8 files changed, 400 insertions(+)
+
+commit 5cc27ef7f8857d8d0d1e1c0938d1ec0a173696d0
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Tue Nov 5 14:32:05 2024 -0500
+
+    Update .gitignore
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit da80dfcc14c3a264bfdac011860bff448ce96f86
+Merge: b3f15be f5c3fdc
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Mon Nov 4 12:51:03 2024 -0500
+
+    Merge pull request #12 from BlakeMcl/Julie
+    
+    working on addItem, editItem, publishItem
+
+commit f5c3fdc0c4c27ea778aacbef54ac9f9e7bf95ef5
+Author: julievieira <javieira@wpi.edu>
+Date:   Mon Nov 4 12:49:44 2024 -0500
+
+    Working through addItem
+
+ LambdaFunctions/addItem/index.mjs     | 10 ++++------
+ auction-house/src/app/Seller/page.tsx | 17 ++++++++++++++---
+ 2 files changed, 18 insertions(+), 9 deletions(-)
+
+commit 0cd89fc2113c7a2c63799b74f313d7ec1f1a9c1f
+Author: julievieira <javieira@wpi.edu>
+Date:   Mon Nov 4 02:31:15 2024 -0500
+
+    Testing addItem, editItem, publishItem
+
+ LambdaFunctions/addItem/index.mjs           |  46 ++++++
+ LambdaFunctions/addItem/index.zip           | Bin 0 -> 336126 bytes
+ LambdaFunctions/addItem/package-lock.json   |  98 +++++++++++++
+ LambdaFunctions/addItem/package.json        |  13 ++
+ LambdaFunctions/editItem/index.mjs          |  42 ++++++
+ LambdaFunctions/editItem/package.json       |  13 ++
+ LambdaFunctions/publishItem/index.mjs       |  42 ++++++
+ LambdaFunctions/publishItem/package.json    |  13 ++
+ auction-house/package-lock.json             | 210 ++++++++++++++--------------
+ auction-house/src/app/Seller/addItemDiv.tsx |  16 +++
+ auction-house/src/app/Seller/page.tsx       | 151 +++++++++++++++++++-
+ auction-house/src/app/globals.css           |  13 ++
+ package-lock.json                           |   6 +
+ 13 files changed, 555 insertions(+), 108 deletions(-)
+
+commit b3f15be10a135ddaf5e3ccfe0c38c753f64ea11f
+Merge: 9d200a8 a48db10
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Sat Nov 2 23:14:53 2024 -0400
+
+    Merge pull request #11 from BlakeMcl/Timory
+
+commit a48db10201e4f6d0c68acfd15ca6ea4c341fcebe
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 2 23:11:17 2024 -0400
+
+    ViewItem Images
+    
+    The images for view item work now!
+
+ auction-house/src/app/Item/page.tsx | 11 +----------
+ 1 file changed, 1 insertion(+), 10 deletions(-)
+
+commit ba1658912606c24ab628e24f07b2e888f1f50bad
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Nov 2 18:36:19 2024 -0400
+
+    Close Accounts and View Item
+    
+    Both buyer and seller close accounts are fully working. Customer view item is working except for image display.
+
+ LambdaFunctions/closeAccountBuyer/index.mjs  | 13 +++---
+ LambdaFunctions/closeAccountSeller/index.mjs | 13 +++---
+ LambdaFunctions/getallItems/index.mjs        | 15 ++++---
+ LambdaFunctions/viewItemCustomer/index.mjs   |  9 +++--
+ auction-house/src/app/Buyer/page.tsx         | 14 +++----
+ auction-house/src/app/Customer/page.tsx      | 60 +++++++++++++++-------------
+ auction-house/src/app/Item/page.tsx          | 24 +++++++----
+ auction-house/src/app/Seller/page.tsx        |  4 +-
+ auction-house/src/app/globals.css            | 23 ++++++++++-
+ 9 files changed, 111 insertions(+), 64 deletions(-)
+
+commit 9bd8d2ec2271ff1934ca4c4f77a167ef88fed0f0
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Oct 31 19:59:12 2024 -0400
+
+    LamdaFunctions
+
+ .../closeAccountBuyer/package-lock.json            | 109 +++++++++++++++++++++
+ LambdaFunctions/closeAccountBuyer/package.zip      | Bin 0 -> 335931 bytes
+ .../closeAccountSeller/package-lock.json           | 109 +++++++++++++++++++++
+ .../closeAccountSeller/package-lock.zip            | Bin 0 -> 335930 bytes
+ LambdaFunctions/getallItems/package-lock.json      | 109 +++++++++++++++++++++
+ LambdaFunctions/getallItems/package-lock.zip       | Bin 0 -> 335922 bytes
+ LambdaFunctions/viewItemCustomer/package-lock.json | 109 +++++++++++++++++++++
+ LambdaFunctions/viewItemCustomer/package-lock.zip  | Bin 0 -> 335928 bytes
+ auction-house/package-lock.json                    | 105 ++++++++++++++++++++
+ auction-house/src/app/Buyer/buyerLamdas.tsx        |  18 ++++
+ 10 files changed, 559 insertions(+)
+
+commit 9d200a86157b1a363b9d868c25dbb3c391f0f7bd
+Merge: 120a606 2f6d428
+Author: julievieira <127808182+julievieira@users.noreply.github.com>
+Date:   Thu Oct 31 19:12:33 2024 -0400
+
+    Merge pull request #10 from BlakeMcl/TimoryPackageLock
+    
+    Create package-lock.json
+
+commit 2f6d428f3c198795023396ca3af92fca503da389
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Oct 31 19:10:33 2024 -0400
+
+    Create package-lock.json
+
+ auction-house/package-lock.json | 4902 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 4902 insertions(+)
+
+commit 120a6061514d9d18984a7ed7766fa6c9c187d0d1
+Merge: 9203a0e 8d50fa4
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Thu Oct 31 18:00:24 2024 -0400
+
+    Merge pull request #9 from BlakeMcl/TimoryViewItem
+    
+    Timory view item
+
+commit 8d50fa42ca0161d2ec8375918d1705f83d329207
+Merge: 060265b 9203a0e
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Oct 31 17:54:32 2024 -0400
+
+    Merge branch 'main' into TimoryViewItem
+    
+    Timory and Blake Worked through the Merge error
+    
+    Co-Authored-By: TimoryG <127773359+TimoryG@users.noreply.github.com>
+
+commit 060265b6ea897119df2d9c752f7ca3c281f7ff93
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Oct 31 17:50:41 2024 -0400
+
+    Reset
+
+ auction-house/src/app/Buyer/buyerLamdas.tsx | 18 ------------------
+ auction-house/src/app/globals.css           | 23 +++++++++++++++++++++++
+ 2 files changed, 23 insertions(+), 18 deletions(-)
+
+commit 6556400702ffda7779b224b29f20eed082edc958
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Oct 31 17:47:05 2024 -0400
+
+    Merge Issue Attempt Fix
+
+ auction-house/src/app/Buyer/buyerLamdas.tsx | 18 ++++++++++++++++++
+ auction-house/src/app/globals.css           | 23 -----------------------
+ 2 files changed, 18 insertions(+), 23 deletions(-)
+
+commit 518d91369595d3816145e1e8a894cb3b50624206
+Merge: bb928ef 1fa02fb
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Oct 31 17:32:09 2024 -0400
+
+    Merge branch 'TimoryViewItem' of https://github.com/BlakeMcl/AuctionHouseCLIPS into TimoryViewItem
+
+commit bb928ef5d2c81ca42d9a6e732de7b92338699722
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Oct 31 17:30:47 2024 -0400
+
+    viewItem mostly working
+    
+    Front end and back end implementation of view Item plus some minor edits to the file setup of the close account use cases.
+
+ LambdaFunctions/getallItems/index.mjs              |  40 ++++++++
+ .../{viewItem => getallItems}/package.json         |   0
+ .../{viewItem => viewItemCustomer}/index.mjs       |   0
+ LambdaFunctions/viewItemCustomer/package.json      |  13 +++
+ auction-house/src/app/Buyer/buyerLambdas.tsx       |  18 ----
+ auction-house/src/app/Buyer/page.tsx               |  20 +++-
+ auction-house/src/app/Customer/page.tsx            | 112 +++++++++++++++++++++
+ auction-house/src/app/Item/layout.tsx              |  35 +++++++
+ auction-house/src/app/Item/page.tsx                |  19 ++++
+ auction-house/src/app/Seller/page.tsx              |  18 +++-
+ auction-house/src/app/Seller/sellerLambdas.tsx     |  18 ----
+ auction-house/src/app/globals.css                  |  23 +++++
+ 12 files changed, 277 insertions(+), 39 deletions(-)
+
+commit 1fa02fb15b89015ee35bb3a6060ce5161cc2e5a7
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Oct 31 17:24:45 2024 -0400
+
+    viewItem mostly working
+    
+    Front end and back end implementation of view Item plus some minor edits to the file setup of the close account use cases.
+
+ LambdaFunctions/getallItems/index.mjs              |   40 +
+ .../{viewItem => getallItems}/package.json         |    0
+ .../{viewItem => viewItemCustomer}/index.mjs       |    0
+ LambdaFunctions/viewItemCustomer/package.json      |   13 +
+ auction-house/package-lock.json                    | 5035 +++++++++++++++++++-
+ auction-house/src/app/Buyer/buyerLambdas.tsx       |   18 -
+ auction-house/src/app/Buyer/page.tsx               |   20 +-
+ auction-house/src/app/Customer/page.tsx            |  112 +
+ auction-house/src/app/Item/layout.tsx              |   35 +
+ auction-house/src/app/Item/page.tsx                |   19 +
+ auction-house/src/app/Seller/page.tsx              |   18 +-
+ auction-house/src/app/Seller/sellerLambdas.tsx     |   18 -
+ auction-house/src/app/globals.css                  |   23 +
+ 13 files changed, 5253 insertions(+), 98 deletions(-)
+
+commit 9203a0ed68fbb46f540c3b0b8f8240f2f86ba0f6
+Merge: fee829a 03c12a8
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Thu Oct 31 17:23:24 2024 -0400
+
+    Merge pull request #6 from BlakeMcl/Blake
+    
+    Login Use Cases Done
+
+commit 03c12a8d2c7384108f704fdb5ac7acec173e0811
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Oct 31 17:21:44 2024 -0400
+
+    Login Cases Done
+
+ auction-house/src/app/globals.css | 44 ++++++++++++++++++++++++++++++++-------
+ auction-house/src/app/page.tsx    |  9 ++++++++
+ 2 files changed, 45 insertions(+), 8 deletions(-)
+
+commit 647521241b987075d9dc24ff7be1d74bf200d52b
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Thu Oct 31 16:49:42 2024 -0400
+
+    UserLogin is Working
+
+ LambdaFunctions/.DS_Store                          |  Bin 6148 -> 6148 bytes
+ LambdaFunctions/LambdaIndexs/LoginLambda/index.mjs |   75 -
+ LambdaFunctions/LoginLambda/encrypt.tsx            |   28 +
+ LambdaFunctions/LoginLambda/index.mjs              |  109 +
+ .../{LambdaIndexs => }/LoginLambda/package.json    |    0
+ auction-house/package-lock.json                    | 8524 +++++++++++++++++++-
+ auction-house/src/app/Api.js                       |    2 +-
+ auction-house/src/app/Buyer/buyerLambdas.tsx       |    1 +
+ auction-house/src/app/Buyer/page.tsx               |    2 +-
+ auction-house/src/app/globals.css                  |    9 +
+ auction-house/src/app/page.tsx                     |   71 +-
+ 11 files changed, 8690 insertions(+), 131 deletions(-)
+
+commit fee829af9f5f0ddba9d35f32d807a5a9d96c4c71
+Merge: 3ba4974 bf7f2fa
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sun Oct 27 12:29:53 2024 -0400
+
+    Merge pull request #5 from BlakeMcl/Blake
+    
+    Encryption and Some Css work
+
+commit bf7f2fa6678b25b104d6c6940d0063df0e443cfe
+Merge: f4e0557 3ba4974
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Sun Oct 27 12:25:46 2024 -0400
+
+    Merge branch 'main' into Blake
+
+commit f4e0557d1713dc2d7e10328a4031e40d21ca8e0f
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Sun Oct 27 12:17:02 2024 -0400
+
+    Encryption and Some Css work
+
+ .DS_Store                                          | Bin 6148 -> 6148 bytes
+ LambdaFunctions/LambdaIndexs/LoginLambda/index.mjs |  75 +++++++++++++++++++++
+ .../LambdaIndexs/LoginLambda/package.json          |  13 ++++
+ auction-house/assets/AuctionHouseLogo.png          | Bin 0 -> 773269 bytes
+ auction-house/package-lock.json                    |  41 ++++++++++-
+ auction-house/package.json                         |   9 +--
+ auction-house/src/app/encrypt.tsx                  |  28 ++++++++
+ auction-house/src/app/globals.css                  |  12 +++-
+ auction-house/src/app/loginPageControllers.tsx     |   0
+ auction-house/src/app/page.tsx                     |  33 +++++++--
+ 10 files changed, 200 insertions(+), 11 deletions(-)
+
+commit 3ba4974fc812fa0fb008fb7fb5aea405c2cba560
+Merge: 1095b65 a2dc748
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Sat Oct 26 22:52:15 2024 -0400
+
+    Merge pull request #4 from BlakeMcl/TimoryCloseAccount
+
+commit a2dc7482316d2d8c7cb152d515ecd6b858acd995
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Sat Oct 26 22:50:37 2024 -0400
+
+    Partially working close account use cases
+    
+    I created the front end and back end functions for the buyer and seller close account use cases. New library added was react-secure-storage so use npm install.
+
+ LambdaFunctions/closeAccountBuyer/index.mjs     | 40 ++++++++++++++++++++++
+ LambdaFunctions/closeAccountBuyer/package.json  | 13 ++++++++
+ LambdaFunctions/closeAccountSeller/index.mjs    | 40 ++++++++++++++++++++++
+ LambdaFunctions/closeAccountSeller/package.json | 13 ++++++++
+ LambdaFunctions/viewItem/index.mjs              | 40 ++++++++++++++++++++++
+ LambdaFunctions/viewItem/package.json           | 13 ++++++++
+ auction-house/package-lock.json                 | 44 ++++++++++++++++++++++++-
+ auction-house/package.json                      |  9 ++---
+ auction-house/src/app/Api.js                    | 33 +++++++++++++++++++
+ auction-house/src/app/Buyer/buyerLambdas.tsx    | 18 ++++++++++
+ auction-house/src/app/Buyer/page.tsx            |  5 +++
+ auction-house/src/app/Seller/page.tsx           |  5 +++
+ auction-house/src/app/Seller/sellerLambdas.tsx  | 18 ++++++++++
+ 13 files changed, 286 insertions(+), 5 deletions(-)
+
+commit 1095b652b90cd4f2cfe3a8e90c3332e8ca9f1624
+Merge: 62b5151 b23a0bb
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Fri Oct 25 12:03:17 2024 -0400
+
+    Merge pull request #3 from BlakeMcl/BlakeTestBranch
+    
+    FinishedLambdaSetup
+
+commit b23a0bbedb64f51cb01947951640b13e4c37f077
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Fri Oct 25 08:45:53 2024 -0400
+
+    FinishedLambdaSetup
+
+ .DS_Store                                          | Bin 6148 -> 6148 bytes
+ LambdaFunctions/.DS_Store                          | Bin 6148 -> 6148 bytes
+ LambdaFunctions/LambdaIndexs/testLambda/index.mjs  |  32 +++++++++++++++++++++
+ .../LambdaIndexs/testLambda/package.json           |  13 +++++++++
+ LambdaFunctions/sampleLambdaUpload/index.mjs       |  22 +++++++-------
+ 5 files changed, 56 insertions(+), 11 deletions(-)
+
+commit 62b5151739267972e37dea70e2be51d48317f0e9
+Merge: 73d570a 0415161
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Wed Oct 23 20:06:22 2024 -0400
+
+    Merge pull request #2 from BlakeMcl/TimoryNavigation
+    
+    Page Create and Navigation
+
+commit 0415161f86c709748c05b743cfdf9324813c987e
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Wed Oct 23 20:05:02 2024 -0400
+
+    Page Create and Navigation
+    
+    Created the login, customer, admin, buyer, and seller pages. Set up initial navigation from login page.
+
+ auction-house/src/app/Admin/layout.tsx    |  35 ++++++++++
+ auction-house/src/app/Admin/page.tsx      |  12 ++++
+ auction-house/src/app/Buyer/layout.tsx    |  35 ++++++++++
+ auction-house/src/app/Buyer/page.tsx      |  12 ++++
+ auction-house/src/app/Customer/layout.tsx |  35 ++++++++++
+ auction-house/src/app/Customer/page.tsx   |  12 ++++
+ auction-house/src/app/Seller/layout.tsx   |  35 ++++++++++
+ auction-house/src/app/Seller/page.tsx     |  12 ++++
+ auction-house/src/app/globals.css         |  35 ++++++++++
+ auction-house/src/app/page.tsx            | 102 ++++--------------------------
+ 10 files changed, 235 insertions(+), 90 deletions(-)
+
+commit 73d570ac9550f97602467050baab3a59c2b445d8
+Merge: 1ab88bc 0e64a44
+Author: TimoryG <127773359+TimoryG@users.noreply.github.com>
+Date:   Wed Oct 23 14:27:58 2024 -0400
+
+    Merge pull request #1 from BlakeMcl/BlakeTestBranch
+    
+    Init Project and Lambda From Class
+
+commit 0e64a44d8fe8d826917b9ac0f2b8bd2e298131db
+Author: BlakeMcl <bgmcleod@wpi.edu>
+Date:   Wed Oct 23 14:04:12 2024 -0400
+
+    Init Project and Lambda From Class
+
+ .DS_Store                                          |  Bin 0 -> 6148 bytes
+ LambdaFunctions/.DS_Store                          |  Bin 0 -> 6148 bytes
+ LambdaFunctions/sampleLambdaUpload/.DS_Store       |  Bin 0 -> 6148 bytes
+ LambdaFunctions/sampleLambdaUpload/index.mjs       |   32 +
+ .../sampleLambdaUpload/package-lock.json           |  173 +
+ LambdaFunctions/sampleLambdaUpload/package.json    |   13 +
+ auction-house/.eslintrc.json                       |    3 +
+ auction-house/.gitignore                           |   40 +
+ auction-house/README.md                            |   36 +
+ auction-house/next.config.ts                       |    7 +
+ auction-house/package-lock.json                    | 8929 ++++++++++++++++++++
+ auction-house/package.json                         |   26 +
+ auction-house/postcss.config.mjs                   |    8 +
+ auction-house/public/file.svg                      |    1 +
+ auction-house/public/globe.svg                     |    1 +
+ auction-house/public/next.svg                      |    1 +
+ auction-house/public/vercel.svg                    |    1 +
+ auction-house/public/window.svg                    |    1 +
+ auction-house/src/app/favicon.ico                  |  Bin 0 -> 25931 bytes
+ auction-house/src/app/fonts/GeistMonoVF.woff       |  Bin 0 -> 67864 bytes
+ auction-house/src/app/fonts/GeistVF.woff           |  Bin 0 -> 66268 bytes
+ auction-house/src/app/globals.css                  |   21 +
+ auction-house/src/app/layout.tsx                   |   35 +
+ auction-house/src/app/page.tsx                     |  101 +
+ auction-house/tailwind.config.ts                   |   19 +
+ auction-house/tsconfig.json                        |   27 +
+ 26 files changed, 9475 insertions(+)
+
+commit 1ab88bca53db623d74051da8629246258d9ae9e2
+Author: Blake McLeod <148784083+BlakeMcl@users.noreply.github.com>
+Date:   Thu Oct 10 18:12:20 2024 -0400
+
+    Initial commit
+
+ .gitignore | 130 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ LICENSE    |  21 ++++++++++
+ README.md  |   2 +
+ 3 files changed, 153 insertions(+)

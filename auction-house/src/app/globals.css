@@ -1,0 +1,378 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+.popUp{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(34 34 37);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.linkButton{
+  background-color: rgb(34 34 37);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+.typeSelect{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background: rgb(25, 30, 42);
+  color: white;
+  font-size: 15px;
+  position: fixed;
+  display: flex;
+}
+ .headerLogo{
+ height: 50px;
+ margin-left: 45%;
+ }
+ .usernameHeader{
+  margin-left: 25%;
+  font-size: 15px; 
+  display: flex;
+ }
+ 
+ .headerText{
+  margin-right: 15px; 
+  font-size: 15px; 
+ }
+
+.login-container{
+  display: flex;
+}
+.titleScreenLogo {
+  width: 40%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+/*CSS for the app container List*/
+.item-container {
+  width: 1000px;
+  height: 800px; /* Adjust height as needed */
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.item-row {
+  display: flex; /* Align items in rows */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.item {
+  width: 25%; /* Each item takes 32% of the width to fit 3 in one row */
+  height: 500px; /* Adjust height of each item */
+  /*background-color: rgb(243, 240, 240);*/
+  text-align: center;
+  line-height: 20px; /* Center text vertically */
+  box-sizing: border-box;
+  margin-right: 2px;
+  text-wrap: wrap;  
+}
+.itemPageContainer{
+  display: flex;
+  flex-direction: row;
+}
+.itemIndiv {
+  width: 300px; /* Each item takes 32% of the width to fit 3 in one row */
+  height: 400px; /* Adjust height of each item */
+  /*background-color: rgb(243, 240, 240);*/
+  text-align: center;
+  line-height: 20px; /* Center text vertically */
+  box-sizing: border-box;
+  margin-right: 2px;
+  text-wrap: wrap;  
+  align-items: center;
+}
+.bidInDiv {
+  width: 300px; /* Each item takes 32% of the width to fit 3 in one row */
+  height: 400px; /* Adjust height of each item */
+  /*background-color: rgb(243, 240, 240);*/
+  text-align: center;
+  line-height: 20px; /* Center text vertically */
+  box-sizing: border-box;
+  margin-right: 2px;
+  text-wrap: wrap; 
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden;  
+}
+
+.itemImage {
+  width: 150px; 
+  height: 150px; 
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: auto;
+  border-radius: 25%;
+}
+
+.inputDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.inputLabel {
+  border: '2px solid black';
+  height: 55px;
+  width: 150px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.inputElement {
+  border: '2px solid black';
+  height: 55px;
+  width: 250px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.editItemButtonContainer{
+  display: flex; /* Align items in rows */
+  align-items: center;
+  justify-content: space-around;
+}
+.addItemLabel{
+  font-size: 24px;
+}
+.navContainer{
+  display:flex;
+  width: 100%;
+  height :75px;
+  padding-left: 75px;
+  background: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.navItems{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.popUpDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  background-color: #ffffff;
+  padding: 20px;
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+.fundButtons{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcomeLabel{
+  font-size: 40px;
+  color: white;
+  margin: 10px;
+}
+.navBarLogo{
+  width: 3%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+.accountLabel{
+  font-size: 20px;
+  color: white;
+}
+.descriptionLabel{
+  font-size: 20px;
+  color: white;
+}
+
+.logoutButton{
+  background-color: rgb(34 34 37);
+  color: white;
+  padding: 14px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+}
+
+.accountContainer{
+  display: flex;
+  flex-direction: column;
+
+}
+.fundsDiv{
+  display: flex;
+}
+
+.request-div {
+  width: 500px;
+  height: 200px; /* Adjust height as needed */
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.request-row {
+  display: flex; /* Align items in rows */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.request {
+  width: 100%; /* Each item takes 32% of the width to fit 3 in one row */
+  height: 20%; /* Adjust height of each item */
+  /*background-color: rgb(243, 240, 240);*/
+  box-sizing: border-box;
+  margin-right: 2px;
+  text-wrap: wrap;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fulfill{
+  background-color: rgb(34 34 37);
+  color: white;
+  padding: 14px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+}
+
+.financeContainer{
+  display: flex;
+  flex-direction: row;
+}
+.financeData{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.reportContainer{
+  display: flex;
+  flex-direction: row;
+  border-color: #0a0a0a;
+  border-width: 2px;
+}
+.auctionReportLabel{
+  font-size: xx-large;
+}
+.buyerContainer{
+  width: 200px;
+  height: 500px; /* Adjust height as needed */
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding : 1px;
+  border-color: #0a0a0a;
+  border-width: 2px;
+}
+.sellerContainer{
+  width: 200px;
+  height: 500px; /* Adjust height as needed */
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding : 1px;
+  border-color: #0a0a0a;
+  border-width: 2px;
+}
+.bidContainer{
+  width: 600px;
+  height: 500px; /* Adjust height as needed */
+  overflow-y: auto; /* Scroll vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  border-color: #0a0a0a;
+  border-width: 2px;
+}
+.subtitleLabels{
+  font-size: large;
+}
+
+.buyerSearchSortContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: auto;
+  width: 1000px; 
+}
+
+.smallButton{
+  background-color: rgb(34 34 37);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
