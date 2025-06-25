@@ -58,9 +58,3 @@ Make sure you have the following tools installed:
 
 ---
 
-### 🛠️ Installation
-
-```bash
-git clone https://github.com/Sonu0207/Auction-House.git
-cd Auction-House
-npm install
