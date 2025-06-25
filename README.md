@@ -10,7 +10,6 @@ A serverless, cloud-based auction platform allowing users to create listings and
 
 - [Features](#features)  
 - [Architecture & Tech Stack](#architecture--tech-stack)  
-- [Getting Started](#getting-started)  
 - [Prerequisites](#prerequisites)  
 
 
@@ -39,9 +38,7 @@ A serverless, cloud-based auction platform allowing users to create listings and
 
 ---
 
-## 🧰 Getting Started
-
-### Prerequisites
+## 🧰 Prerequisites
 
 Make sure you have the following tools installed:
 
